@@ -5,13 +5,7 @@ class Calculator
     public function calculate($string)
     {
         switch ($string) {
-            case ('0'):
-                return 0;
-            break;
-            case (''):
-                return 0;
-            break;
-            case (null):
+            case ('0' || '' || null):
                 return 0;
             break;
             case ('1'):
@@ -21,6 +15,5 @@ class Calculator
                 return 3;
             break;
         }
-
     }
 }
